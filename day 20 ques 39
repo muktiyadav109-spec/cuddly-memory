@@ -1,0 +1,39 @@
+Q39: Write a program to find the product of odd digits of a number.
+
+/*
+Sample Test Cases:
+Input 1:
+12345
+Output 1:
+15 (1*3*5)
+
+Input 2:
+2468
+Output 2:
+1 (no odd digits, assume 1)
+
+*/
+
+  #include <stdio.h>
+
+int main() {
+    int n,i,result=1;
+
+    printf("Enter number: ");
+    scanf(" %d", &n);
+
+    
+
+    
+    while (n>0) {
+     i= n%10;
+        if (i%2 != 0) {
+            result=result*i;
+            
+        }
+        n=n/10;
+    }
+    printf(" product is %d\n", result);
+
+    return 0;
+}
